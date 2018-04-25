@@ -5,22 +5,24 @@
   <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
 </head>
 <body>
-  <h1>How to rename branch</h1>
-  <div>
-    <ul>
-      <li>①Rename local branch</li>
+  <div style ="margin-left:2%;">
+    <h1>How to rename branch</h1>
+    <div>
       <ul>
-        <li>git branch -m prev_branch new_branch</li>
+        <li>①Rename local branch</li>
+        <ul>
+          <li>git branch -m prev_branch new_branch</li>
+        </ul>
+        <li>②Delete remote branch</li>
+        <ul>
+          <li>git push origin :remote_branch_name</li>
+        </ul>
+        <li>③Push new branch</li>
+        <ul>
+          <li>git push origin new_branch</li>
+        </ul>
       </ul>
-      <li>②Delete remote branch</li>
-      <ul>
-        <li>git push origin :remote_branch_name</li>
-      </ul>
-      <li>③Push new branch</li>
-      <ul>
-        <li>git push origin new_branch</li>
-      </ul>
-    </ul>
+    </div>
   </div>
-</body>
+</body> 
 </html>
