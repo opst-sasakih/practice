@@ -28,28 +28,21 @@
   <div style ="margin-left:2%;">
     <h1>How to rebase</h1>
     <div>
-      <ul>
-        <li>①Checkout&Pull develop branch</li>
-        <ul>
-          <li>git checkout develop</li>
-          <li>git pull origin develop</li>
-        </ul>
-        <li>②Rebase feature branch</li>
-        <ul>
-          <li>git checkout feature</li>
-          <li>git rebase develop</li>
-        </ul>
-        <li>※When a conflict occurs</li>
-        <ul>
-          <li>merge file</li>
-          <li>git add file</li>
-          <li>git rebase --continue</li>
-        </ul>
-        <li>③Push feature branch</li>
-        <ul>
-          <li>git push -f origin feature</li>
-        </ul>
-      </ul>
+        <h3>①Checkout&Pull develop branch</h3>
+          <p>git checkout develop</p>
+          <p>git pull origin develop</p>
+  </br>
+        <h3>②Rebase feature branch</h3>
+          <p>git checkout feature</p>
+          <p>git rebase develop</p>
+  </br>
+        <h3>※When a conflict occurs</h3>
+          <p>merge file</p>
+          <p>git add file</p>
+          <p>git rebase --continue</p>
+  </br>
+        <h3>③Push feature branch</h3>
+          git push -f origin feature
       reference: <a href="https://qiita.com/panti310/items/e0ec74b47c6c219f2a8b">git rebaseを初めて使った際のまとめ</a>
     </div>
   </div>
