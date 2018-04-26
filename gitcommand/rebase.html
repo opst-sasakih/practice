@@ -1,0 +1,36 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>How to rebase</title>
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+</head>
+<body>
+  <div style ="margin-left:2%;">
+    <h1>How to rebase</h1>
+    <div>
+      <ul>
+        <li>①Checkout&Pull develop branch</li>
+        <ul>
+          <li>git checkout develop</li>
+          <li>git pull origin develop</li>
+        </ul>
+        <li>②Rebase feature branch</li>
+        <ul>
+          <li>git checkout feature</li>
+          <li>git rebase develop</li>
+        </ul>
+        <li>※When a conflict occurs</li>
+        <ul>
+          <li>merge file</li>
+          <li>git add file</li>
+          <li>git rebase --continue</li>
+        </ul>
+        <li>④Push feature branch</li>
+        <ul>
+          <li>git push -f origin feature</li>
+        </ul>
+      </ul>
+    </div>
+  </div>
+</body> 
+</html>
