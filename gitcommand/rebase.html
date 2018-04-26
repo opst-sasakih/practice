@@ -1,7 +1,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>How to rename branch</title>
+  <title>How to rebase</title>
   <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
 </head>
 <body>
@@ -20,22 +20,30 @@
           <div class="collapse navbar-collapse" id="navbarEexample">
             <ul class="nav navbar-nav">
               <li><a href="./command_list.html">git command list</a></li>
-              <li><a href="./rebase.html">How to rebase</a></li>
+              <li><a href="./renamebranch.html">How to rename branch</a></li>
             </ul>
           </div>
         </div>
       </nav>
   <div style ="margin-left:2%;">
-    <h1>How to rename branch</h1>
+    <h1>How to rebase</h1>
     <div>
-      <h3>①Rename local branch</h3>
-        <p>git branch -m prev_branch new_branch</p>
-      </br>
-        <h3>②Delete remote branch</h3>
-        <p>git push origin :remote_branch_name</p>
-      </br>
-     <h3>③Push new branch</h3>
-      <p>git push origin new_branch<p>
+        <h3>①Checkout&Pull develop branch</h3>
+          <p>git checkout develop</p>
+          <p>git pull origin develop</p>
+       </br>
+        <h3>②Rebase feature branch</h3>
+          <p>git checkout feature</p>
+          <p>git rebase develop</p>
+        </br>
+        <h3>※When a conflict occurs</h3>
+          <p>merge file</p>
+          <p>git add file</p>
+          <p>git rebase --continue</p>
+         </br>
+        <h3>③Push feature branch</h3>
+          git push -f origin feature
+      reference: <a href="https://qiita.com/panti310/items/e0ec74b47c6c219f2a8b">git rebaseを初めて使った際のまとめ</a>
     </div>
   </div>
 </body> 
